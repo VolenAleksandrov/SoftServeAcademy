@@ -1,0 +1,6 @@
+D:\GitHub\SoftServe\Demo1\NthDigit\bin\Debug\NthDigit.exe.config
+D:\GitHub\SoftServe\Demo1\NthDigit\bin\Debug\NthDigit.exe
+D:\GitHub\SoftServe\Demo1\NthDigit\bin\Debug\NthDigit.pdb
+D:\GitHub\SoftServe\Demo1\NthDigit\obj\Debug\NthDigit.csprojResolveAssemblyReference.cache
+D:\GitHub\SoftServe\Demo1\NthDigit\obj\Debug\NthDigit.exe
+D:\GitHub\SoftServe\Demo1\NthDigit\obj\Debug\NthDigit.pdb

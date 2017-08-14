@@ -1,0 +1,6 @@
+D:\GitHub\SoftServe\Demo1\8Queens\bin\Debug\8Queens.exe.config
+D:\GitHub\SoftServe\Demo1\8Queens\bin\Debug\8Queens.exe
+D:\GitHub\SoftServe\Demo1\8Queens\bin\Debug\8Queens.pdb
+D:\GitHub\SoftServe\Demo1\8Queens\obj\Debug\8Queens.csprojResolveAssemblyReference.cache
+D:\GitHub\SoftServe\Demo1\8Queens\obj\Debug\8Queens.exe
+D:\GitHub\SoftServe\Demo1\8Queens\obj\Debug\8Queens.pdb
