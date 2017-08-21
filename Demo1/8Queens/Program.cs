@@ -8,141 +8,69 @@ namespace _8Queens
 {
     class Program
     {
-        const int N = 8;
+        private const int n = 8;
         static void Main(string[] args)
         {
-            int count = 0;
-            int[,] board = new int[N, N];
+            Console.WriteLine(Solve());
+        }
 
-            //Initialize the board array to 0
-            for (int i = 0; i < N; i++)
+        private static void PrintSolution(int[,] board)
+        {
+            for (int i = 0; i < n; ++i)
             {
-                for (int j = 0; j < N; j++)
-                {
-                    board[i, j] = 0;
-                }
-            }
+                for (int j = 0; j < n; ++j)
+                    Console.Write(" {0} ", board[i, j]);
 
-            //Initialize the pointer array
-            int[] pointer = new int[N];
-            for (int i = 0; i < N; i++)
-            {
-                pointer[i] = -1;
-            }
-
-            //Implementation of Back Tracking Algorithm
-            for (int j = 0; ;)
-            {
-                pointer[j]++;
-                //Reset and move one column back 
-                if (pointer[j] == N)
-                {
-                    board[pointer[j] - 1, j] = 0;
-                    pointer[j] = -1;
-                    j--;
-                    if (j == -1)
-                    {
-                        Console.WriteLine("All possible configurations have been examined...");
-                        break;
-                    }
-                }
-                else
-                {
-                    board[pointer[j], j] = 1;
-                    if (pointer[j] != 0)
-                    {
-                        board[pointer[j] - 1, j] = 0;
-                    }
-                    if (SolutionCheck(board))
-                    {
-                        j++;//move to next column
-                        if (j == N)
-                        {
-                            j--;
-                            count++;
-                            Console.WriteLine("Solution" + count.ToString() + ":");
-                            for (int p = 0; p < N; p++)
-                            {
-                                for (int q = 0; q < N; q++)
-                                {
-                                    Console.Write(board[p, q] + " ");
-                                }
-                                Console.WriteLine();
-                            }
-                        }
-                    }
-                }
+                Console.WriteLine();
             }
         }
-        public static bool SolutionCheck(int[,] board)
+
+
+        private static bool IsSafe(int[,] board, int row, int col)
         {
-            //Row check
-            for (int i = 0; i < N; i++)
-            {
-                int sum = 0;
-                for (int j = 0; j < N; j++)
-                {
-                    sum = sum + board[i, j];
-                }
-                if (sum > 1)
-                {
+            int i, j;
+
+            for (i = 0; i < col; ++i)
+                if (Convert.ToBoolean(board[row, i]))
                     return false;
+
+            for (i = row, j = col; i >= 0 && j >= 0; --i, --j)
+                if (Convert.ToBoolean(board[i, j]))
+                    return false;
+
+            for (i = row, j = col; j >= 0 && i < n; ++i, --j)
+                if (Convert.ToBoolean(board[i, j]))
+                    return false;
+
+            return true;
+        }
+
+        private static bool SolveNQ(int[,] board, int col)
+        {
+            if (col >= n)
+                return true;
+
+            for (int i = 0; i < n; ++i)
+            {
+                if (IsSafe(board, i, col))
+                {
+                    board[i, col] = 1;
+                    if (SolveNQ(board, col + 1))
+                        return true;
+
+                    board[i, col] = 0;
                 }
             }
-            //Main diagonal check
-            //above
-            for (int i = 0, j = N - 2; j >= 0; j--)
-            {
-                int sum = 0;
-                for (int p = i, q = j; q < N; p++, q++)
-                {
-                    sum = sum + board[p, q];
-                }
-                if (sum > 1)
-                {
-                    return false;
-                }
-            }
-            //below
-            for (int i = 1, j = 0; i < N - 1; i++)
-            {
-                int sum = 0;
-                for (int p = i, q = j; p < N; p++, q++)
-                {
-                    sum = sum + board[p, q];
-                }
-                if (sum > 1)
-                {
-                    return false;
-                }
-            }
-            //Minor diagonal check
-            //above
-            for (int i = 0, j = 1; j < N; j++)
-            {
-                int sum = 0;
-                for (int p = i, q = j; q >= 0; p++, q--)
-                {
-                    sum = sum + board[p, q];
-                }
-                if (sum > 1)
-                {
-                    return false;
-                }
-            }
-            //below
-            for (int i = 1, j = N - 1; i < N - 1; i++)
-            {
-                int sum = 0;
-                for (int p = i, q = j; p < N; p++, q--)
-                {
-                    sum = sum + board[p, q];
-                }
-                if (sum > 1)
-                {
-                    return false;
-                }
-            }
+            return false;
+        }
+        private static bool Solve()
+        {
+            int[,] board = new int[n, n];
+
+            if (SolveNQ(board, 0) == false)
+                return false;
+
+            PrintSolution(board);
             return true;
         }
     }

@@ -1,0 +1,6 @@
+D:\GitHub\SoftServeAcademy\Demo1\GraphTask\bin\Debug\GraphTask.exe.config
+D:\GitHub\SoftServeAcademy\Demo1\GraphTask\bin\Debug\GraphTask.exe
+D:\GitHub\SoftServeAcademy\Demo1\GraphTask\bin\Debug\GraphTask.pdb
+D:\GitHub\SoftServeAcademy\Demo1\GraphTask\obj\Debug\GraphTask.csprojResolveAssemblyReference.cache
+D:\GitHub\SoftServeAcademy\Demo1\GraphTask\obj\Debug\GraphTask.exe
+D:\GitHub\SoftServeAcademy\Demo1\GraphTask\obj\Debug\GraphTask.pdb
