@@ -9,9 +9,18 @@ namespace _8Queens
     class Program
     {
         private const int n = 8;
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine(Solve());
+            int[,] board = new int[n, n];
+            if (!SolveNQ(board, 0))
+            {
+                Console.WriteLine("Impossible");
+            }
+            else
+            {
+                PrintSolution(board);
+                Console.WriteLine("Possible");
+            }
         }
 
         private static void PrintSolution(int[,] board)
@@ -31,14 +40,14 @@ namespace _8Queens
             int i, j;
 
             for (i = 0; i < col; ++i)
-                if (Convert.ToBoolean(board[row, i]))
+                if (Convert.ToBoolean(board[row, i]))   //Checks the row.
                     return false;
 
-            for (i = row, j = col; i >= 0 && j >= 0; --i, --j)
+            for (i = row, j = col; i >= 0 && j >= 0; --i, --j) //Checks the diagonal from the given cell to top left corner.
                 if (Convert.ToBoolean(board[i, j]))
                     return false;
 
-            for (i = row, j = col; j >= 0 && i < n; ++i, --j)
+            for (i = row, j = col; j >= 0 && i < n; ++i, --j) //Check the diagonal from the given cell to bottom left corner.
                 if (Convert.ToBoolean(board[i, j]))
                     return false;
 
@@ -62,16 +71,6 @@ namespace _8Queens
                 }
             }
             return false;
-        }
-        private static bool Solve()
-        {
-            int[,] board = new int[n, n];
-
-            if (SolveNQ(board, 0) == false)
-                return false;
-
-            PrintSolution(board);
-            return true;
         }
     }
 }
