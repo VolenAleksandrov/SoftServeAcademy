@@ -8,18 +8,18 @@ namespace _8Queens
 {
     class Program
     {
-        private const int n = 8;
+        private const int n = 2;
         static void Main()
         {
             int[,] board = new int[n, n];
-            if (!SolveNQ(board, 0))
-            {
-                Console.WriteLine("Impossible");
-            }
-            else
+            if (SolveNQ(board, 0))
             {
                 PrintSolution(board);
                 Console.WriteLine("Possible");
+            }
+            else
+            {
+                Console.WriteLine("Impossible");
             }
         }
 
