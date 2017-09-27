@@ -1,0 +1,5 @@
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Models\bin\Debug\HRManager.Models.dll
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Models\bin\Debug\HRManager.Models.pdb
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Models\obj\Debug\HRManager.Models.dll
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Models\obj\Debug\HRManager.Models.pdb
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Models\obj\Debug\HRManager.Models.csprojResolveAssemblyReference.cache

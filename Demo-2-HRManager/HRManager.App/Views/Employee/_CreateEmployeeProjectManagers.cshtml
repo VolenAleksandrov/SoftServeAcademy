@@ -1,0 +1,9 @@
+﻿@model Dictionary<int, string>
+<label class="control-label col-md-2">Delivery director</label>
+<select class="form-control" name="DeliveryDirector">
+    <option value="0">Without delivery director</option>
+    @foreach (var director in Model)
+    {
+        <option value="@director.Key">@director.Value</option>
+    }
+</select>

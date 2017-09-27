@@ -1,0 +1,12 @@
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\obj\Debug\ManagerWepApp.Data.csprojResolveAssemblyReference.cache
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\ManagerWepApp.Data.dll.config
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\ManagerWepApp.Data.dll
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\ManagerWepApp.Data.pdb
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\EntityFramework.dll
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\ManagerWepApp.Models.dll
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\ManagerWepApp.Models.pdb
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\EntityFramework.xml
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\obj\Debug\ManagerWepApp.Data.dll
+D:\GitHub\SoftServeAcademy\Demo2-ManagerWepApp\ManagerWepApp.Data\obj\Debug\ManagerWepApp.Data.pdb

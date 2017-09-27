@@ -1,0 +1,18 @@
+﻿@model HRManager.Models.ViewModels.Employee.CreateEmployeeTeamLeadPartial
+<label class="control-label col-md-2">Project</label>
+<select class="form-control" name="project">
+    <option value="0">Without project</option>
+    @foreach (var project in Model.ProjectsWithoutTeamLead)
+    {
+        <option value="@project.Key">@project.Value</option>
+    }
+</select>
+<label class="control-label col-md-2">ProjectManager</label>
+<select class="form-control" name="ProjectManager">
+    <option value="0">Without project manager</option>
+    @foreach (var manager in Model.ProjectManagers)
+    {
+        <option value="@manager.Key">@manager.Value</option>
+    }
+</select>
+

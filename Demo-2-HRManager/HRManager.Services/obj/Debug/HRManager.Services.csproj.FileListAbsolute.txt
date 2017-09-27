@@ -1,0 +1,11 @@
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\bin\Debug\HRManager.Services.dll
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\bin\Debug\HRManager.Services.pdb
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\bin\Debug\HRManager.Data.dll
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\bin\Debug\HRManager.Models.dll
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\bin\Debug\HRManager.Data.pdb
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\bin\Debug\HRManager.Data.dll.config
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\bin\Debug\EntityFramework.xml
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\bin\Debug\HRManager.Models.pdb
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\obj\Debug\HRManager.Services.csprojResolveAssemblyReference.cache
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\obj\Debug\HRManager.Services.dll
+D:\GitHub\SoftServeAcademy\Demo-2-HRManager\HRManager.Services\obj\Debug\HRManager.Services.pdb

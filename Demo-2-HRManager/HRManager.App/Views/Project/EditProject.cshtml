@@ -1,0 +1,60 @@
+﻿@model HRManager.Models.ViewModels.Project.EditProjectVm
+
+@{
+    ViewBag.Title = "EditProject";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EditProject</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>EditProjectVm</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" col-md-2>Team lead: @Model.TeamLeadName</label>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FreeTeamLeads, htmlAttributes: new { @class = "control-label col-md-2" })
+            <select class="form-control" name="teamLead">
+                <option value="0">Do not change team lead</option>
+                <option value="1">Without team lead</option>
+                @foreach (var employee in Model.FreeTeamLeads)
+                {
+                    <option value="@employee.Key">@employee.Value</option>
+                }
+            </select>
+            @if (Model.FreeTeamLeads.Count < 1)
+            {
+                <label class="control-label" col-md-2>There is no team leads without project. You shoud make project without team lead.</label>
+            }
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "AllProjects")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
